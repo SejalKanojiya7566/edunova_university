@@ -1,0 +1,323 @@
+/* ================= GLOBAL ================= */
+body{
+    font-family: 'Segoe UI', sans-serif;
+    margin:0;
+    padding:0;
+}
+
+main{
+    margin-top:80px; /* navbar overlap fix */
+}
+
+/* ================= NAVBAR ================= */
+.edu-navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #000;
+    padding: 0 40px;
+    z-index: 1000;
+}
+
+.edu-navbar .navbar-brand img{
+    height: 45px;
+}
+
+.edu-navbar .nav-link{
+    color:#fff !important;
+    font-weight:500;
+    margin:0 12px;
+    position:relative;
+    cursor:pointer;
+}
+
+/* underline hover */
+.edu-navbar .nav-link::after{
+    content:'';
+    position:absolute;
+    bottom:-6px;
+    left:0;
+    width:0;
+    height:2px;
+    background:#f4b400;
+    transition:0.4s;
+}
+.edu-navbar .nav-link:hover::after{
+    width:100%;
+}
+.edu-navbar .nav-link:hover{
+    color:#f4b400 !important;
+}
+
+/* ================= DROPDOWN ================= */
+.dropdown{ position:relative; }
+
+.mega-menu{
+    position:absolute;
+    top:60px;
+    left:0;
+    background:#111;
+    min-width:260px;
+    padding:18px;
+    display:none;
+    box-shadow:0 10px 25px rgba(0,0,0,0.4);
+    z-index:999;
+}
+
+.dropdown:hover .mega-menu{
+    display:block;
+}
+
+.mega-menu a{
+    display:block;
+    color:#ddd;
+    padding:6px 0;
+    font-size:14px;
+    text-decoration:none;
+}
+.mega-menu a:hover{
+    color:#f4b400;
+    padding-left:6px;
+}
+
+/* ================= APPLY BUTTON ================= */
+.apply-btn{
+    background:#c9a14a;
+    color:#000;
+    padding:8px 18px;
+    border-radius:25px;
+    font-weight:600;
+    text-decoration:none;
+}
+.apply-btn:hover{
+    background:#fff;
+    color:#000;
+}
+
+/* ================= HERO SLIDER ================= */
+.hero-slide{
+    min-height: calc(100vh - 80px);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.hero-content{
+    position:absolute;
+    top:50%;
+    left:8%;
+    transform:translateY(-50%);
+    color:#fff;
+    max-width:520px;
+}
+
+.hero-content h1{
+    font-size:48px;
+    font-weight:700;
+}
+
+.carousel-item{
+    transition: transform .6s ease-in-out, opacity .6s ease-in-out;
+}
+
+/* ================= SECTIONS ================= */
+.section{
+    padding:80px 0;
+    overflow:hidden;
+}
+
+/* ================= ABOUT ================= */
+.about-hero{
+    min-height: calc(100vh - 80px);
+    display:flex;
+    align-items:center;
+    background:
+      linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+      url('../images/slider1.jpg') center/cover no-repeat;
+    color:#fff;
+}
+
+.about-hero h1{
+    font-size:48px;
+    font-weight:700;
+}
+
+.about-content{
+    padding:80px 0;
+}
+
+.about-philosophy{
+    background:#f8f9fa;
+    padding:70px 0;
+}
+
+.why-edunova{
+    padding:80px 0;
+}
+
+.why-card{
+    background:#fff;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* ================= CARDS ================= */
+.card{
+    border:none;
+    height:100%;
+    transition:all 0.3s ease;
+}
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* ================= FOOTER ================= */
+.edu-footer{
+    background:#0b0b0b;
+    color:#fff;
+    padding:60px 0 30px;
+    position:relative;
+    clear:both;
+}
+
+.edu-footer h5{
+    color:#c9a14a;
+    margin-bottom:15px;
+}
+
+.edu-footer ul{
+    list-style:none;
+    padding:0;
+}
+
+.edu-footer ul li{
+    margin-bottom:8px;
+}
+
+.edu-footer ul li a{
+    color:#ccc;
+    text-decoration:none;
+}
+.edu-footer ul li a:hover{
+    color:#c9a14a;
+}
+
+.footer-input{
+    width:100%;
+    padding:8px;
+    border:none;
+    outline:none;
+}
+
+.subscribe-btn{
+    width:100%;
+    padding:8px;
+    background:#c9a14a;
+    border:none;
+    font-weight:600;
+    cursor:pointer;
+}
+
+/* ================= SOCIAL ================= */
+.social-icons{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    margin-top:15px;
+}
+.social-icons a{
+    color:#fff;
+    font-size:20px;
+    transition:.3s;
+}
+.social-icons a:hover{
+    color:#c9a14a;
+    transform:translateY(-3px);
+}
+
+/* ================= FLOAT ================= */
+.whatsapp-float{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    z-index:999;
+}
+
+/* ================= RECRUITERS ================= */
+.recruiters img{
+    max-height:60px;
+    object-fit:contain;
+    filter:grayscale(100%);
+    transition:0.3s;
+}
+
+.recruiters img:hover{
+    filter:grayscale(0%);
+    transform:scale(1.1);
+}
+.hero-content h1 {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.hero-content p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+.hero-content,
+.banner-content {
+  position: absolute;
+  top: 22%;            /* 👈 yahan se upar-neeche control */
+  left: 8%;            /* 👈 left alignment */
+  transform: translateY(-50%);
+  text-align: left;
+  color: #000;
+}
+/* ===== FIX ADD NOTIFICATION FORM ===== */
+
+.admin-content {
+    padding: 25px 30px;
+}
+
+.table-wrapper {
+    width: 100%;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-table th {
+    background: #111827;
+    color: #fff;
+    text-align: left;
+    padding: 14px;
+    font-size: 14px;
+}
+
+/* ===== Notification Add Form Fix ===== */
+
+.admin-table td {
+    vertical-align: top;
+}
+
+.admin-table textarea {
+    width: 100%;
+    min-height: 120px;   /* <-- yahi main fix hai */
+    resize: vertical;
+    padding: 10px 12px;
+    font-size: 14px;
+}
+
+.admin-table input,
+.admin-table select {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+}
