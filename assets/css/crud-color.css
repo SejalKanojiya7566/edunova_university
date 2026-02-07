@@ -1,0 +1,25 @@
+/* CRUD BUTTON COLORS */
+
+.btn-edit{
+    background:#0d6efd; /* BLUE */
+    color:#fff;
+    border:none;
+    padding:5px 10px;
+    font-size:13px;
+}
+
+.btn-delete{
+    background:#dc3545; /* RED */
+    color:#fff;
+    border:none;
+    padding:5px 10px;
+    font-size:13px;
+}
+
+.btn-edit:hover{
+    background:#084298;
+}
+
+.btn-delete:hover{
+    background:#bb2d3b;
+}
