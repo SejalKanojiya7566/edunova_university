@@ -1,0 +1,308 @@
+/* =======================
+   GLOBAL
+======================= */
+body.admin-body {
+    background: #f4f6f9;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+}
+
+/* =======================
+   SIDEBAR
+======================= */
+.sidebar {
+    width: 260px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #1e1e2d;
+    color: #fff;
+    overflow-y: auto;
+}
+
+.sidebar-header {
+    padding: 18px;
+    background: #151521;
+}
+
+.sidebar-header h5 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.sidebar-header small {
+    font-size: 13px;
+    color: #aaa;
+}
+
+.sidebar a {
+    color: #cfcfcf;
+    padding: 14px 22px;
+    display: block;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background: #2a2a3c;
+    color: #fff;
+}
+
+/* ACTIVE LINK */
+.sidebar .nav-link.active {
+    background: #0d6efd;
+    color: #fff !important;
+    border-left: 4px solid #ffc107;
+}
+
+/* =======================
+   MAIN CONTENT (FIXED)
+======================= */
+.admin-content {
+    margin-left: 260px;
+    padding: 20px 24px;
+    width: calc(100% - 260px);
+    box-sizing: border-box;
+}
+
+/* remove unwanted top gaps */
+.admin-content > * {
+    margin-top: 0;
+}
+
+/* heading */
+.dashboard-heading {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+/* =======================
+   TABLE WRAPPER (FIX)
+======================= */
+.table-wrapper {
+    background: #fff;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* =======================
+   ADMIN TABLE (FINAL FIX)
+======================= */
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+    table-layout: auto;
+}
+
+.admin-table thead {
+    background: #1e1e2d;
+    color: #fff;
+}
+
+.admin-table th,
+.admin-table td {
+    padding: 12px 14px;
+    border-bottom: 1px solid #e5e5e5;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.admin-table tbody tr:hover {
+    background: #f4f6f9;
+}
+
+/* message column truncate */
+.admin-table td.msg {
+    max-width: 260px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* =======================
+   ACTION BUTTONS
+======================= */
+.action-btns {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    flex-wrap: nowrap;
+}
+
+.action-btns a {
+    white-space: nowrap;
+}
+
+/* =======================
+   BUTTONS
+======================= */
+.btn-success-sm,
+.btn-warning-sm,
+.btn-danger-sm {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.btn-success-sm {
+    background: #198754;
+    color: #fff;
+}
+
+.btn-warning-sm {
+    background: #ffc107;
+    color: #000;
+}
+
+.btn-danger-sm {
+    background: #dc3545;
+    color: #fff;
+}
+
+.btn-danger-sm:hover {
+    background: #bb2d3b;
+}
+
+/* =======================
+   STATUS BADGES
+======================= */
+.status-badge {
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.status-badge.approved {
+    background: #198754;
+    color: #fff;
+}
+
+.status-badge.rejected {
+    background: #dc3545;
+    color: #fff;
+}
+
+.status-badge.pending {
+    background: #ffc107;
+    color: #000;
+}
+
+/* =======================
+   TOP BAR (HEADING + ADD)
+======================= */
+.admin-content .d-flex {
+    margin-bottom: 12px;
+}
+
+/* =======================
+   FORMS IN TABLE STYLE
+======================= */
+.admin-table input,
+.admin-table select {
+    width: 100%;
+    padding: 6px 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+/* ============================= */
+/* DASHBOARD LAYOUT FIX */
+/* ============================= */
+
+.admin-content {
+    margin-left: 260px;
+    padding: 35px 40px;
+    min-height: calc(100vh - 20px);
+    background: #f4f6f9;
+}
+
+/* Dashboard heading */
+.admin-content h4 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #1e1e2d;
+    margin-bottom: 25px;
+}
+
+/* Row spacing fix */
+.admin-content .row {
+    margin: 0;
+}
+
+/* Dashboard cards */
+.stat-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 26px 28px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    border-left: 6px solid #0d6efd;
+    height: 100%;
+}
+
+/* Hover effect */
+.stat-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 35px rgba(0,0,0,0.12);
+}
+
+/* Card text */
+.stat-card small {
+    font-size: 15px;
+    color: #6c757d;
+}
+
+.stat-card h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1e1e2d;
+    margin-top: 6px;
+}
+
+/* Icons */
+.stat-icon {
+    font-size: 40px;
+    opacity: 0.9;
+}
+
+/* Individual colors */
+.stat-card:nth-child(1) {
+    border-left-color: #0d6efd;
+}
+.stat-card:nth-child(1) .stat-icon {
+    color: #0d6efd;
+}
+
+.stat-card:nth-child(2) {
+    border-left-color: #198754;
+}
+.stat-card:nth-child(2) .stat-icon {
+    color: #198754;
+}
+
+.stat-card:nth-child(3) {
+    border-left-color: #fd7e14;
+}
+.stat-card:nth-child(3) .stat-icon {
+    color: #fd7e14;
+}
+
+/* Responsive fix */
+@media (max-width: 768px) {
+    .admin-content {
+        padding: 25px 20px;
+    }
+
+    .stat-card {
+        margin-bottom: 15px;
+    }
+}
