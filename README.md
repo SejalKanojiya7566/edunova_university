@@ -14,6 +14,7 @@ This project provides information related to admissions, courses, campuses, plac
 - Admin panel structure
 - Bootstrap-based UI
 - Clean and organized folder structure
+- Admin authentication is handled using PHP sessions.
 
 ---
 
